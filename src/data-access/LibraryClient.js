@@ -1,6 +1,4 @@
-
 export default class LibraryClient {
-
   loadSongsFrom(url, successCallback, errorCallback) {
 
     fetch(url).then(r => r.json())

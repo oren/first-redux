@@ -91,17 +91,6 @@ export default class Controls extends React.Component {
               ref='player' id='player' controls >
           <source src={this.props.player.playing.url} />
         </audio>
-        <ProgressBar time={this.props.player.time}
-                      duration={this.props.player.duration}
-                      player={this.refs.player}
-                      progressBarClick={this.progressBarClick} />
-        <button type="button"
-                className="btn btn-default">RW</button>
-        <button onClick={this.playAudio.bind(this)}
-                type="button"
-                className="btn btn-default">{this.props.player.playing.currentlyPlaying ? pause : play }</button>
-        <button type="button"
-                className="btn btn-default">ff</button>
       </div>
     );
   }
