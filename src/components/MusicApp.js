@@ -5,7 +5,6 @@ import { addTrack, removeTrack, loadLibrary, playTrack, updateTime,
 
 import AudioPlayer from './Player.js';
 import Library from './Library';
-import StatusBar from './StatusBar';
 
 class MusicApp extends Component {
   componentDidMount(){
